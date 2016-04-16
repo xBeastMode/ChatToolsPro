@@ -1,0 +1,83 @@
+name: EmotionsPE
+main: EmotionsPE\Main
+version: 1.0
+api: [1.0.0]
+load: POSTWORLD
+author: paetti
+description: EmotionsPE by paetti.
+commands:
+ hug:
+  description: §aHug a player
+  usage: "/hug <Player>."
+  permission: emotionspe.hug
+ hugall:
+  description: §aHug all players
+  usage: "/hugall."
+  permission: emotionspe.hugall
+ kiss:
+  description: §aKiss a player
+  usage: "/kiss <Player>."
+  permission: emotionspe.kiss
+ kissall:
+  description: §aKiss all players
+  usage: "/kissall."
+  permission: emotionspe.kissall
+ beat:
+  description: §aBeat a player
+  usage: "/beat <Player>."
+  permission: emotionspe.beat
+ beatall:
+  description: §aBeat all players
+  usage: "/beatall."
+  permission: emotionspe.beatall
+ slap:
+  description: §aSlap a player
+  usage: "/slap <Player>."
+  permission: emotionspe.slap
+ slapall:
+  description: §aSlap all players
+  usage: "/slapall."
+  permission: emotionspe.slapall
+ happy:
+  description: §aHappy
+  usage: "/happy."
+  permission: emotionspe.status
+ sad:
+  description: §aSad
+  usage: "/sad."
+  permission: emotionspe.status
+ ill:
+  description: §aill
+  usage: "/ill."
+  permission: emotionspe.status
+ crazy:
+  description: §acrazy
+  usage: "/crazy."
+  permission: emotionspe.status
+ angry:
+  description: §aangry
+  usage: "/angry."
+  permission: emotionspe.status
+ mad:
+  description: §amad
+  usage: "/mad."
+  permission: emotionspe.status
+permissions:
+ emotionspe.hug:
+  default: true
+ emotionspe.hugall:
+  default: op
+  emotionspe.kiss:
+  default: true
+ emotionspe.kissall:
+  default: op
+ emotionspe.beat:
+  default: true
+ emotionspe.beatall:
+  default: op
+ emotionspe.slap:
+  default: true
+ emotionspe.slapall:
+  default: op
+ emotionspe.status:
+  default: true
