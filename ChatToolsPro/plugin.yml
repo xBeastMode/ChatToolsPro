@@ -94,42 +94,42 @@ commands:
   permission: chattoolspro.ip
 permissions:
  chattoolspro.helpme:
- default: true
+  default: true
  chattoolspro.done:
- default: true
+  default: true
  chattoolspro.announcement:
- default: op
+  default: op
  chattoolspro.serversay:
- default: op
+  default: op
  chattoolspro.staffsay:
- default: op
+  default: op
  chattoolspro.support:
- default: op
+  default: op
  chattoolspro.vmsg:
- default: op
+  default: op
  chattoolspro.warning:
- default: op
+  default: op
  chattoolspro.info:
- default: op
+  default: op
  chattoolspro.warn:
- default: op
+  default: op
  chattoolspro.chatsay:
- default: op
+  default: op
  chattoolspro.tipgive:
- default: true
+  default: true
  chattoolspro.setnick:
- default: op
+  default: op
  chatttoolspro.sayas:
- default: op
+  default: op
  chattoolspro.clearchat:
- default: op
+  default: op
  chattoolspro.spam:
- default: op
+  default: op
  chattoolspro.ops:
- default: true
+  default: true
  chattoolspro.report:
- default: true
+  default: true
  chattoolspro.spammsg:
- default: op
+  default: op
  chattoolspro.ip:
- default: op
+  default: op

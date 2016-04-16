@@ -1,4 +1,4 @@
- <?php
+<?php
 
 namespace ChatToolsPro;
 
@@ -22,16 +22,6 @@ use pocketmine\utils\Config;
 
 use pocketmine\permission\ServerOperator;
 
-/**
-   *  ________      ________    _________    ___________   ___________    ___________
-   * |   ___  \    |  ____  |  | ________|  |____   ____| |____   ____|  |____   ____|
-   * |  |___|  |   | |____| |  | |               | |           | |            | |
-   * |  ______/    |  ____  |  | |_______        | |           | |            | |
-   * | |           | |    | |  |  _______|       | |           | |            | |
-   * | |           | |    | |  | |_______        | |           | |        ____| |____
-   * |_|           |_|    |_|  |_________|       |_|           |_|       |___________|
-**/
-
 class Main extends PluginBase implements Listener{
 
 public function onEnable(){
@@ -43,6 +33,16 @@ $this->saveDefaultConfig();
 $this->getLogger()->info(TextFormat::AQUA . "ChatToolsPro by paetti loaded. Coded by paetti. Instagram: xPaetti Kik: Oupsay");
 
 }
+
+/**
+   *  ________      ________    _________    ___________   ___________    ___________
+   * |   ___  \    |  ____  |  | ________|  |____   ____| |____   ____|  |____   ____|
+   * |  |___|  |   | |____| |  | |               | |           | |            | |
+   * |  ______/    |  ____  |  | |_______        | |           | |            | |
+   * | |           | |    | |  |  _______|       | |           | |            | |
+   * | |           | |    | |  | |_______        | |           | |        ____| |____
+   * |_|           |_|    |_|  |_________|       |_|           |_|       |___________|
+**/
 
  
 
@@ -251,7 +251,7 @@ if($player instanceof Player){
 
 }else{
 
-    $sender->sendMessage(TextFormat::Red . "Usage: /spammsg <Player> <Message>");
+    $sender->sendMessage(TextFormat::RED . "Usage: /spammsg <Player> <Message>");
 
 }
 
