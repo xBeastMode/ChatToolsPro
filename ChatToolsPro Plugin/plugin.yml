@@ -1,0 +1,135 @@
+name: ChatToolsPro
+main: ChatToolsPro\Main
+version: 1.0
+api: [1.0.0]
+load: POSTWORLD
+author: paetti
+description: Chat Tools by paetti.
+commands:
+ helpme:
+  description: §aAdds [NeedsHelp] Tag to a Name
+  usage: "Â§a/helpme."
+  permission: chattoolspro.helpme
+ vmsg:
+  description: §aSend a message without your name
+  usage: "Â§a/vmsg <Player> <Message>."
+  permission: chattoolspro.vmsg
+ spammsg:
+  description: §aSpam a message to a player
+  usage: "Â§a/spammsg <Player> <Message>."
+  permission: chattoolspro.spammsg
+ sayas:
+  description: §aSay message as another player
+  usage: "Â§a/sayas."
+  permission: chattoolspro.sayas
+ clearchat:
+  description: §aClears the chat
+  usage: "Â§a/clearchat."
+  permission: chattoolspro.clearchat
+ spam:
+  description: §aSpam
+  usage: "Â§a/spam."
+  permission: chattoolspro.spam
+ report:
+  description: §aReport a player
+  usage: "Â§a/report <Player> <Reason>."
+  permission: chattoolspro.report
+ ops:
+  description: §aList online ops
+  usage: "Â§a/ops."
+  permission: chattoolspro.ops
+ setnick:
+  description: §aSet a nick
+  usage: "Â§a/setnick <Nick>."
+  permission: chattoolspro.setnick
+ tipgive:
+  description: §aGive somebody a tip
+  usage: "Â§a/tipgive <Player> <Tip>."
+  permission: chattoolspro.tipgive
+ warn:
+  description: §aWarn a player
+  usage: "Â§a/warn <Player> <Reason>."
+  permission: chattoolspro.warn
+ chatsay:
+  description: §aSend an message without prefix
+  usage: "Â§a/chatsay <Message>."
+  permission: chattoolspro.chatsay
+ info:
+  description: §aBroadcast a Message as [Info]
+  usage: "Â§a/info <Message>."
+  permission: chattoolspro.info
+ warning:
+  description: §aBroadcasts a Message as [Warning]
+  usage: "Â§a/warning <Message>."
+  aliases: [warnsay]
+  permission: chattoolspro.warning
+ support:
+  description: §aBroadcasts a Message as [Support]
+  usage: "Â§a/support <Message>."
+  aliases: [supportsay, saysupport]
+  permission: chattoolspro.supportsay
+ announcement:
+  description: §aBroadcasts a Message as [Announcement]
+  usage: "Â§a/announcement."
+  aliases: [sayannounce]
+  permission: chattoolspro.announcement
+ done:
+  description: §aRemoves [NeedsHelp] Tag from a Name
+  aliases: [donehelp]
+  usage: "Â§a/helpdone."
+  permission: chattoolspro.done
+ serversay:
+  description: §aBroadcasts a Message as [Server]
+  usage: "Â§a/serversay."
+  aliases: [sayserver]
+  permission: chattoolspro.serversay
+ staffsay:
+  description: §aBroadcasts a Message as [Staff]
+  usage: "Â§a/staffsay."
+  aliases: [saystaff]
+  permission: chattoolspro.staffsay
+ ip:
+  description: §aCheck IP and Port of a player
+  usage: "Â§a/ip <Player>."
+  permission: chattoolspro.ip
+permissions:
+ chattoolspro.helpme:
+ default: true
+ chattoolspro.done:
+ default: true
+ chattoolspro.announcement:
+ default: op
+ chattoolspro.serversay:
+ default: op
+ chattoolspro.staffsay:
+ default: op
+ chattoolspro.support:
+ default: op
+ chattoolspro.vmsg:
+ default: op
+ chattoolspro.warning:
+ default: op
+ chattoolspro.info:
+ default: op
+ chattoolspro.warn:
+ default: op
+ chattoolspro.chatsay:
+ default: op
+ chattoolspro.tipgive:
+ default: true
+ chattoolspro.setnick:
+ default: op
+ chatttoolspro.sayas:
+ default: op
+ chattoolspro.clearchat:
+ default: op
+ chattoolspro.spam:
+ default: op
+ chattoolspro.ops:
+ default: true
+ chattoolspro.report:
+ default: true
+ chattoolspro.spammsg:
+ default: op
+ chattoolspro.ip:
+ default: op
