@@ -130,6 +130,8 @@ $player->sendMessage(TextFormat::DARK_PURPLE . "<3 " . ($sender instanceof Playe
 
 $sender->sendMessage("Â§cUsage: /kiss <Player>");
 
+return true;
+
 }
 
 case "kissall":
@@ -159,9 +161,13 @@ $sender->sendMessage(TextFormat::DARK_RED . "!! You beat " . $player->getName() 
 
 $player->sendMessage(TextFormat::DARK_RED . "!! " . ($sender instanceof Player ? $sender->getDisplayName() : $sender->getName()) . " beats you !! ");
 
+return true;
+
 }else{
 
 $sender->sendMessage("Â§cUsage: /beat <Player>");
+
+return true;
 
 }
 
@@ -193,9 +199,13 @@ $sender->sendMessage(TextFormat::YELLOW . ":D You slap " . $player->getName() . 
 
 $player->sendMessage(TextFormat::YELLOW . ":D " . ($sender instanceof Player ? $sender->getDisplayName() : $sender->getName()) . " slaps you :D");
 
+return true;
+
 }else{
 
 $sender->sendMessage("Â§cUsage: /slap <Player>");
+
+return true;
 
 }
 
