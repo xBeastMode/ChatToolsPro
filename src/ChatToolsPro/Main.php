@@ -155,7 +155,7 @@ if($player instanceof Player){
 }else{
 
     $sender->sendMessage("Â§cUsage: /warn <Player> <Reason>");
-
+Return true;
 }
 
 return true;
@@ -217,7 +217,7 @@ if($player instanceof Player){
     $sender->sendMessage("Â§cUsage: /tipgive <Player> <Tip>");
 
 }
-
+Return true;
 case "spammsg":
 
 $name = \strtolower(\array_shift($args));
@@ -254,7 +254,7 @@ if($player instanceof Player){
     $sender->sendMessage(TextFormat::RED . "Usage: /spammsg <Player> <Message>");
 
 }
-
+Return true;
 
 case "setnick":
 
@@ -451,7 +451,7 @@ return true;
 }else{
 
 $sender->sendMessage(TextFormat::RED."Player not online!");
-
+Return true;
 }
 
 }
@@ -487,7 +487,7 @@ return true;
 }else{
 
 $sender->sendMessage(TextFormat::RED."Player not online!");
-
+Return true;
 }
 
 }
