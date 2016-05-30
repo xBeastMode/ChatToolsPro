@@ -65,5 +65,7 @@ ChatToolsPro, the ultimate Chat Plugin.
  /Report - Report A Player and all OP's get a Report message
  default: true
 
+ /checkop - Check if a Player is OP or not
+ default: op
  /spammsg - Write a spam message to a Player
  default: op
