@@ -1,6 +1,6 @@
 name: ChatToolsPro
 main: ChatToolsPro\Main
-version: 1.0
+version: 1.1
 api: [1.0.0]
 load: POSTWORLD
 author: paetti
@@ -119,6 +119,10 @@ commands:
   description: Â§aSee online OP's
   usage: "/ops"
   permission: chattoolspro.ops
+ lockchat:
+  description: Â§aSee online OP's
+  usage: "/lockchat <lock/unlock>"
+  permission: chattoolspro.lockchat
 permissions:
  chattoolspro.ctp:
   default: true
@@ -171,4 +175,6 @@ permissions:
  chattoolspro.deopfake:
   default: op
  chattoolspro.checkop:
+  default: op
+ chattoolspro.lockchat:
   default: op
