@@ -51,13 +51,11 @@ class Main extends PluginBase implements Listener{
 
             case "chattoolspro":
                 if(!(isset($args[0]))){
-                $sender->sendMessage(TextFormat::GREEN . "Page 1 of 4 Help Pages");
-                $sender->sendMessage(TextFormat::GREEN . "/announcement " . TextFormat::WHITE . "Broadcast Message with [Announcement] Tag");
-                $sender->sendMessage(TextFormat::GREEN . "/serversay " . TextFormat::WHITE . "Broadcast Message with [Server] Tag");
-                $sender->sendMessage(TextFormat::GREEN . "/staffsay " . TextFormat::WHITE . "Broadcast Message with [Staff] Tag");
-                $sender->sendMessage(TextFormat::GREEN . "/support " . TextFormat::WHITE . "Broadcast Message with [Support] Tag");
-                $sender->sendMessage(TextFormat::GREEN . "/warning " . TextFormat::WHITE . "Broadcast Message with [Warning] Tag");
-                $sender->sendMessage(TextFormat::GREEN . "/alert " . TextFormat::WHITE . "Broadcast Message with [ALERT] Tag");
+                $sender->sendMessage(TextFormat::GREEN . "ChatToolsPro v1.1 coded by paetti. Kik: Oupsay");
+                $sender->sendMessage(TextFormat::GREEN . "/chattoolspro <1/2/3/4/5> for help");
+               
+      
+           
                     return true;
                 }
             if($args[0] == "1"){
@@ -179,7 +177,7 @@ class Main extends PluginBase implements Listener{
 		}
 		
                 if($player instanceof Player){
-			$sender->sendMessage(TextFormat::YELLOW . "[Tip by " .  $sender->getName() . "  -> you] " . implode(" ", $args));
+			$sender->sendMessage(TextFormat::YELLOW . "[Tip by " .  $sender->getName() . "  -> ".$player->getName." ] " . implode(" ", $args));
 			$player->sendMessage(TextFormat::YELLOW . "[Tip by " . ($sender instanceof Player ? $sender->getDisplayName() : $sender->getName()) . " -> you] " . implode(" ", $args));
 		}else{
 			$sender->sendMessage("Â§cUsage: /tipgive <Player> <Tip>");
@@ -216,7 +214,7 @@ class Main extends PluginBase implements Listener{
 			$sender->sendMessage(TextFormat::GREEN . "Sucessfully fake-opped Player " . TextFormat::YELLOW .  $player->getDisplayName());
 			$player->sendMessage(TextFormat::GRAY . "You are now op!");
 		}else{
-			$sender->sendMessage("Â§cUsage: /opfake <Player>");
+			$sender->sendMessage("§cUsage: /opfake <Player>");
 		}
                 return true;
                 case "deopfake":
@@ -233,7 +231,7 @@ class Main extends PluginBase implements Listener{
 			$sender->sendMessage(TextFormat::GREEN . "Sucessfully fake-deopped Player " . TextFormat::YELLOW .  $player->getDisplayName());
 			$player->sendMessage(TextFormat::GRAY . "You are no longer op!");
 		}else{
-			$sender->sendMessage("Â§cUsage: /deopfake <Player>");
+			$sender->sendMessage("§cUsage: /deopfake <Player>");
 		}
                 return true;
                 case "setnick":
@@ -263,33 +261,13 @@ class Main extends PluginBase implements Listener{
                 $sender->getServer()->broadcastMessage(TextFormat::AQUA . "SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM");       
            return true;
            case "clearchat":
-               $sender->getServer()->broadcastMessage(TextFormat::YELLOW. "[ClearChat]");
-               $sender->getServer()->broadcastMessage(TextFormat::YELLOW. "[ClearChat]");
-               $sender->getServer()->broadcastMessage(TextFormat::YELLOW. "[ClearChat]");
-               $sender->getServer()->broadcastMessage(TextFormat::YELLOW. "[ClearChat]");
-               $sender->getServer()->broadcastMessage(TextFormat::YELLOW. "[ClearChat]");
-               $sender->getServer()->broadcastMessage(TextFormat::YELLOW. "[ClearChat]");
-               $sender->getServer()->broadcastMessage(TextFormat::YELLOW. "[ClearChat]");
-               $sender->getServer()->broadcastMessage(TextFormat::YELLOW. "[ClearChat]");
-               $sender->getServer()->broadcastMessage(TextFormat::YELLOW. "[ClearChat]");
-               $sender->getServer()->broadcastMessage(TextFormat::YELLOW. "[ClearChat]");
-               $sender->getServer()->broadcastMessage(TextFormat::YELLOW. "[ClearChat]");
-               $sender->getServer()->broadcastMessage(TextFormat::YELLOW. "[ClearChat]");
-               $sender->getServer()->broadcastMessage(TextFormat::YELLOW. "[ClearChat]");
-               $sender->getServer()->broadcastMessage(TextFormat::YELLOW. "[ClearChat]");
-               $sender->getServer()->broadcastMessage(TextFormat::YELLOW. "[ClearChat]");
-               $sender->getServer()->broadcastMessage(TextFormat::YELLOW. "[ClearChat]");
-               $sender->getServer()->broadcastMessage(TextFormat::YELLOW. "[ClearChat]");
-               $sender->getServer()->broadcastMessage(TextFormat::YELLOW. "[ClearChat]");
-               $sender->getServer()->broadcastMessage(TextFormat::YELLOW. "[ClearChat]");
-               $sender->getServer()->broadcastMessage(TextFormat::YELLOW. "[ClearChat]");
-               $sender->getServer()->broadcastMessage(TextFormat::YELLOW. "[ClearChat]");
-               $sender->getServer()->broadcastMessage(TextFormat::YELLOW. "[ClearChat]");
-               $sender->getServer()->broadcastMessage(TextFormat::YELLOW. "[ClearChat]");
-               $sender->getServer()->broadcastMessage(TextFormat::YELLOW. "[ClearChat]");
-               $sender->getServer()->broadcastMessage(TextFormat::YELLOW. "[ClearChat]");
-               $sender->getServer()->broadcastMessage(TextFormat::YELLOW. "[ClearChat]");
-               $sender->getServer()->broadcastMessage(TextFormat::YELLOW. "[ClearChat]");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");$sender->getServer()->broadcastMessage(" ");
+              
                $sender->getServer()->broadcastMessage(TextFormat::AQUA . "[ChatToolsPro] ".TextFormat::RED."Chat cleared.");
                        
             return true;
