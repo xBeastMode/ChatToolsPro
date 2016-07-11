@@ -21,6 +21,7 @@ use pocketmine\permission\ServerOperator;
  * This Label is by paetti.
 **/
 class Main extends PluginBase implements Listener{
+	public $prefix = TextFormat::GREEN."[ChatToolsPro]".TextFormat::YELLOW." ";
     public function onEnable(){
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
         $this->saveDefaultConfig();
@@ -101,6 +102,7 @@ class Main extends PluginBase implements Listener{
                 return true;
         }
                 break;
+                // Broadcasting Features
                 case "announcement":
                 $sender->sendMessage("Â§aMessage announced sucessfully!");
                 $sender->getServer()->broadcastMessage(TextFormat::AQUA . "[Announcement] " . implode(" ", $args));
@@ -129,7 +131,7 @@ class Main extends PluginBase implements Listener{
                 }
                 $sender->getServer()->broadcastMessage(implode(" ", $args));
                 return true;
-                
+                // UP - Broadcasting Features
             case "warn":
                 $name = \strtolower(\array_shift($args));
 
@@ -242,7 +244,7 @@ class Main extends PluginBase implements Listener{
                 $sender->sendMessage(TextFormat::GREEN . "Nick set sucessfully.");
                 $sender->setDisplayName(implode(" ", $args));
                           return true;
-              
+             
             case "sayas":
                 $name = \strtolower(\array_shift($args));
                 
@@ -420,7 +422,23 @@ class Main extends PluginBase implements Listener{
 				$sender->sendMessage(TextFormat::RED."No Permission!");
 				return true;
 			}
-               
+               case "lockchat":
+               	        if(!(isset($args[0]))){
+                $sender->sendMessage(TextFormat::GREEN . "Please specify the action! /lockchat <lock/unlock>
+                    return true;
+                }
+            if($args[0] == "lock"){
+            $sender->sendMessage($this->prefix."Chat got locked!");
+            $sender->getServer()->broadcastMessage($this->prefix."Chat got locked by ".$sender->getName())
+	   $this->disableChat = true;
+                return true;
+            }
+            elseif($args[0] == "unlock"){
+           $sender->sendMessage($this->prefix."Chat got unlocked!");
+           $sender->getServer()->broadcastMessage($this->prefix."Chat got unlocked by ".$sender->getName())
+           $this->disableChat = false;
+                return true;
+            }
                 
         
             case "ops":
