@@ -166,6 +166,24 @@ class Main extends PluginBase implements Listener{
 		}
 
 		return true;
+		  case "send":
+                $name = \strtolower(\array_shift($args));
+
+		$player = $sender->getServer()->getPlayer($name);
+
+                if($player === $sender){
+			$sender->sendMessage("You can't send yourself!");
+			return \true;
+		}
+		
+                if($player instanceof Player){
+			$sender->sendMessage($this->prefix."Sended to the specified player.");
+			$player->sendMessage(implode(" ", $args));
+		}else{
+			$sender->sendMessage(TextFormat::RED . "Usage: /send <Player> <Message>");
+		}
+
+		return true;
                 case "tipgive":
                 $name = \strtolower(\array_shift($args));
 
@@ -326,7 +344,7 @@ class Main extends PluginBase implements Listener{
                $sender->getServer()->broadcastMessage(" ");
                $sender->getServer()->broadcastMessage(" ");
               
-               $sender->getServer()->broadcastMessage($this->prefix."Chat cleared by ".$sender->getDisplayName());
+               $sender->getServer()->broadcastMessage($this->prefix."Chat cleared by ".$sender->getDisplayName().TextFormat::RED." Reason: ".implode(" ", $args));
                        
             return true;
            case "spamsay":
