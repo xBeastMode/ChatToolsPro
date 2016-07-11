@@ -30,7 +30,21 @@ class Main extends PluginBase implements Listener{
     public function onDisable(){
         $this->getLogger()->info(TextFormat::AQUA . "ChatToolsPro disabled.");
     }
+        public function onChat(PlayerChatEvent $event) {
     
+      if(!($event->getPlayer()->hasPermission("chattoolspro.lockchat"))) {
+      
+        if($this->disableChat) {
+        
+          $event->setCancelled(true);
+          
+          $event->getPlayer()->sendMessage(TextFormat::GREEN."[ChatToolsPro]" . TextFormat::YELLOW . "The Chat is currently disabled!");
+          
+        }
+        
+      }
+      
+    }
     public function onCommand(CommandSender $sender, Command $command, $label, array $args){
         switch($command->getName()){
 
