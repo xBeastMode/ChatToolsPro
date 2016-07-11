@@ -258,7 +258,23 @@ class Main extends PluginBase implements Listener{
                 $sender->getServer()->broadcastMessage(TextFormat::AQUA . "SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM");
                 $sender->getServer()->broadcastMessage(TextFormat::AQUA . "SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM");
                 $sender->getServer()->broadcastMessage(TextFormat::AQUA . "SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM");
-                $sender->getServer()->broadcastMessage(TextFormat::AQUA . "SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM");       
+                $sender->getServer()->broadcastMessage(TextFormat::AQUA . "SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM");      
+                      $sender->getServer()->broadcastMessage(TextFormat::AQUA . "SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM");
+                $sender->getServer()->broadcastMessage(TextFormat::AQUA . "SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM");
+                $sender->getServer()->broadcastMessage(TextFormat::AQUA . "SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM");
+                $sender->getServer()->broadcastMessage(TextFormat::AQUA . "SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM");
+                $sender->getServer()->broadcastMessage(TextFormat::AQUA . "SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM");
+                $sender->getServer()->broadcastMessage(TextFormat::AQUA . "SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM");
+                $sender->getServer()->broadcastMessage(TextFormat::AQUA . "SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM");
+                $sender->getServer()->broadcastMessage(TextFormat::AQUA . "SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM"); 
+                      $sender->getServer()->broadcastMessage(TextFormat::AQUA . "SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM");
+                $sender->getServer()->broadcastMessage(TextFormat::AQUA . "SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM");
+                $sender->getServer()->broadcastMessage(TextFormat::AQUA . "SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM");
+                $sender->getServer()->broadcastMessage(TextFormat::AQUA . "SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM");
+                $sender->getServer()->broadcastMessage(TextFormat::AQUA . "SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM");
+                $sender->getServer()->broadcastMessage(TextFormat::AQUA . "SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM");
+                $sender->getServer()->broadcastMessage(TextFormat::AQUA . "SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM");
+                $sender->getServer()->broadcastMessage(TextFormat::AQUA . "SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM"); 
            return true;
            case "clearchat":
                $sender->getServer()->broadcastMessage(" ");
@@ -266,9 +282,51 @@ class Main extends PluginBase implements Listener{
                $sender->getServer()->broadcastMessage(" ");
                $sender->getServer()->broadcastMessage(" ");
                $sender->getServer()->broadcastMessage(" ");
-               $sender->getServer()->broadcastMessage(" ");$sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+                $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+                $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+                $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+                $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+                $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
+               $sender->getServer()->broadcastMessage(" ");
               
-               $sender->getServer()->broadcastMessage(TextFormat::AQUA . "[ChatToolsPro] ".TextFormat::RED."Chat cleared.");
+               $sender->getServer()->broadcastMessage($this->prefix."Chat cleared by ".$sender->getDisplayName());
                        
             return true;
            case "spamsay":
@@ -276,6 +334,22 @@ class Main extends PluginBase implements Listener{
                     $sender->sendMessage(TextFormat::RED."Usage: /spamsay <Message>");
                     return true;
                }
+               $sender->getServer()->broadcastMessage(implode(" ", $args));
+               $sender->getServer()->broadcastMessage(implode(" ", $args));
+               $sender->getServer()->broadcastMessage(implode(" ", $args));
+               $sender->getServer()->broadcastMessage(implode(" ", $args));
+               $sender->getServer()->broadcastMessage(implode(" ", $args));
+               $sender->getServer()->broadcastMessage(implode(" ", $args));
+               $sender->getServer()->broadcastMessage(implode(" ", $args));
+               $sender->getServer()->broadcastMessage(implode(" ", $args));
+               $sender->getServer()->broadcastMessage(implode(" ", $args));
+               $sender->getServer()->broadcastMessage(implode(" ", $args));
+               $sender->getServer()->broadcastMessage(implode(" ", $args));
+               $sender->getServer()->broadcastMessage(implode(" ", $args));
+               $sender->getServer()->broadcastMessage(implode(" ", $args));
+               $sender->getServer()->broadcastMessage(implode(" ", $args));
+               $sender->getServer()->broadcastMessage(implode(" ", $args));
+               $sender->getServer()->broadcastMessage(implode(" ", $args));
                $sender->getServer()->broadcastMessage(implode(" ", $args));
                $sender->getServer()->broadcastMessage(implode(" ", $args));
                $sender->getServer()->broadcastMessage(implode(" ", $args));
@@ -402,18 +476,18 @@ class Main extends PluginBase implements Listener{
 			}
                case "lockchat":
                	        if(!(isset($args[0]))){
-                $sender->sendMessage(TextFormat::GREEN . "Please specify the action! /lockchat <lock/unlock>
+                $sender->sendMessage(TextFormat::GREEN . "Please specify the action! /lockchat <lock/unlock>");
                     return true;
                 }
             if($args[0] == "lock"){
             $sender->sendMessage($this->prefix."Chat got locked!");
-            $sender->getServer()->broadcastMessage($this->prefix."Chat got locked by ".$sender->getName())
+            $sender->getServer()->broadcastMessage($this->prefix."Chat got locked by ".$sender->getName());
 	   $this->disableChat = true;
                 return true;
             }
             elseif($args[0] == "unlock"){
            $sender->sendMessage($this->prefix."Chat got unlocked!");
-           $sender->getServer()->broadcastMessage($this->prefix."Chat got unlocked by ".$sender->getName())
+           $sender->getServer()->broadcastMessage($this->prefix."Chat got unlocked by ".$sender->getName());
            $this->disableChat = false;
                 return true;
             }
