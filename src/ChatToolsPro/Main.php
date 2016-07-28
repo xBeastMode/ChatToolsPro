@@ -99,11 +99,25 @@ class Main extends PluginBase implements Listener{
                 $sender->sendMessage(TextFormat::GREEN . "/checkop " . TextFormat::WHITE . "Check if a Player is OP or not");
                 return true;
         }
+         elseif($args[0] == "4"){
+                $sender->sendMessage(TextFormat::GREEN . "Page 4 of 4 Help Pages");
+                $sender->sendMessage(TextFormat::GREEN . "/lockchat " . TextFormat::WHITE . "Lock or unlock Chat");
+                $sender->sendMessage(TextFormat::GREEN . "/illuminati " . TextFormat::WHITE . "Illuminati Message");
+               
+                return true;
+        }
                 break;
                 // Broadcasting Features
                 case "announcement":
                 $sender->sendMessage("Â§aMessage announced sucessfully!");
                 $sender->getServer()->broadcastMessage(TextFormat::AQUA . "[Announcement] " . implode(" ", $args));
+                return true;
+                case "illuminati":
+                $sender->getServer()->broadcastMessage("     /\");
+                $sender->getServer()->broadcastMessage("    /  \");
+                $sender->getServer()->broadcastMessage("   /  @ \");
+                $sender->getServer()->broadcastMessage("  /      \");
+                $sender->getServer()->broadcastMessage(" /________\");
                 return true;
                 case "serversay":
                 $sender->getServer()->broadcastMessage(TextFormat::LIGHT_PURPLE . "[Server] " . implode(" ", $args));
