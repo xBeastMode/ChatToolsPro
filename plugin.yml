@@ -123,6 +123,10 @@ commands:
   description: Â§aSee online OP's
   usage: "/lockchat <lock/unlock>"
   permission: chattoolspro.lockchat
+ illuminati:
+  description: Â§aIlluminati Message
+  usage: "/illuminati."
+  permission: chattoolspro.illuminati
 permissions:
  chattoolspro.ctp:
   default: true
@@ -177,4 +181,6 @@ permissions:
  chattoolspro.checkop:
   default: op
  chattoolspro.lockchat:
+  default: op
+ chattoolspro.illuminati:
   default: op
