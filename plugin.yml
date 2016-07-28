@@ -116,7 +116,7 @@ commands:
   usage: "/report <Player> <Reason>."
   permission: chattoolspro.report
  ops:
-  description: Â§aSee online OP's
+  description: Â§aSee online OP's by a List
   usage: "/ops"
   permission: chattoolspro.ops
  lockchat:
