@@ -79,6 +79,10 @@ commands:
   description: Â§aSets an Nick
   usage: "/setnick <Nick>."
   permission: chattoolspro.setnick
+ delnick:
+  description: Â§aDelete Nick of yourself or another Player
+  usage: "/delnick [Player]."
+  permission: chattoolspro.del
  spam:
   description: Â§aSpam
   usage: "/spam."
@@ -157,6 +161,8 @@ permissions:
  chattoolspro.tipgive:
   default: true
  chattoolspro.setnick:
+  default: op
+ chattoolspro.delnick:
   default: op
  chattoolspro.sayas:
   default: op
