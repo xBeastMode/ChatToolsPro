@@ -6,6 +6,10 @@ ChatToolsPro, the ultimate Chat Plugin.
 
  Dont Report Bugs in the Feedback please! Please Kik me!
 
+For the Devlog go here: 
+
+
+
  My Kik is: Oupsay
  If there nobody is Kik to: xpaetti
 
@@ -49,6 +53,9 @@ ChatToolsPro, the ultimate Chat Plugin.
 
  /setnick - Set your nick
  default: op
+ 
+ /delnick - Reset your nick or the of another player
+ default: op
 
  /sayas - Say a message as another Player (Beta)
  default: op
@@ -67,5 +74,9 @@ ChatToolsPro, the ultimate Chat Plugin.
 
  /checkop - Check if a Player is OP or not
  default: op
+ 
  /spammsg - Write a spam message to a Player
+ default: op
+ 
+ /lockchat - Lock or unlock the chat for all Players
  default: op
