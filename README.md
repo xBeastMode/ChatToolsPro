@@ -80,3 +80,6 @@ For the Devlog go here:
  
  /lockchat - Lock or unlock the chat for all Players
  default: op
+
+ /illuminati - Illuminati Message
+ default: op
