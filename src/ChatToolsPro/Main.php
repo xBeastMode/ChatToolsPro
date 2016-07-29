@@ -39,7 +39,7 @@ class Main extends PluginBase implements Listener{
         
           $event->setCancelled(true);
           
-          $event->getPlayer()->sendMessage(TextFormat::GREEN."[ChatToolsPro]" . TextFormat::YELLOW . "The Chat is currently disabled!");
+          $event->getPlayer()->sendMessage(TextFormat::GREEN."[ChatToolsPro] " . TextFormat::YELLOW . "The Chat is currently disabled!");
           
         }
         
