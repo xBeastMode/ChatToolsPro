@@ -7,6 +7,7 @@ ChatToolsPro, the ultimate Chat Plugin.
  Dont Report Bugs in the Feedback please! Please Kik me!
 
 Project Page: http://paetti.github.io/ChatToolsPro
+
 For the Devlog go here: http://paetti.github.io/ChatToolsPro/devlog.html
 
 
