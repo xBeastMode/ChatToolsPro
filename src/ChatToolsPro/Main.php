@@ -112,13 +112,7 @@ class Main extends PluginBase implements Listener{
                 $sender->sendMessage("Â§aMessage announced sucessfully!");
                 $sender->getServer()->broadcastMessage(TextFormat::AQUA . "[Announcement] " . implode(" ", $args));
                 return true;
-                case "illuminati":
-                $sender->getServer()->broadcastMessage("     /\");
-                $sender->getServer()->broadcastMessage("    /  \");
-                $sender->getServer()->broadcastMessage("   /  @ \");
-                $sender->getServer()->broadcastMessage("  /      \");
-                $sender->getServer()->broadcastMessage(" /________\");
-                return true;
+             
                 case "serversay":
                 $sender->getServer()->broadcastMessage(TextFormat::LIGHT_PURPLE . "[Server] " . implode(" ", $args));
                 return true;
